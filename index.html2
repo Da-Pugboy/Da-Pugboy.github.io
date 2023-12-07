@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <title>Second Part.</title>
       <style>
-      
+p {
+font-family: cursive;
+}
+
       </style>
     </head>
     <body>
