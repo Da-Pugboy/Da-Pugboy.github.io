@@ -1,47 +1,30 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8" />
-  <title>Mini Story!</title>
-  <style>
-       
-  </style>
- </head>
- <body>
- 
-    <h1>Write a mini story!</h1>
-     <p>Hi I hope you have fun!</p>
-     
+<head>
+    <meta charset="utf-8" />
+    <title>Mini Story!</title>
+    <style>
+        /* Add any necessary CSS styles here */
+    </style>
+</head>
+<body>
+    <h1>This page is made specifically for a friend of mine</h1>
     <ul>
-      <li>Place: <input type="text" id="place"></li>
-      <li>A type of attack: <input type="text" id="attack"></li>
-      <li>Monster or enemy: <input type="text" id="monster"></li>
-      <li>Person: <input type="text" id="person"></li>
-      <li>Weapon: <input type="text" id="wep"></li>
+        <li>Code: <input type="text" id="inputCode"></li>
     </ul>
-     
-    <button id="lib-button">Make a story!</button>
-      
-    <p>Generated story: 
-    <span id="story"></span>
-    </p>
- 
+    <button id="code">Enter code</button>
+    <span id="message"></span>
     <script>
-        var libButton = document.getElementById('lib-button');
-        var libIt = function() {
-            var storyDiv = document.getElementById("story");
-            
-            var place = document.getElementById("place").value;
-            var attack = document.getElementById("attack").value;
-            var person = document.getElementById("person").value;
-            var monster = document.getElementById("monster").value;
-            var wep = document.getElementById("wep").value;
-            storyDiv.innerHTML = person + " was attacked by the " + monster + " using the attack " + attack + " with the weapon " + wep + " at the " + place + "!";
-            
+        var sendMessage = function() {
+            var message = document.getElementById("message");
+            var inputCode = document.getElementById("inputCode").value;
+            if (inputCode === "2010SM&2014AP") {
+                message.innerHTML = "Hi star this is mason. i made this little thing so that i can send messages to you, to bad you cant send them back. Check in every once in a while to see if i've sent any message's.";
+            } else {
+                message.innerHTML = ""; // Clear the message if code is incorrect
+            }
         };
-        libButton.addEventListener('click', libIt);
-        
+        document.getElementById("code").addEventListener('click', sendMessage);
     </script>
-  
- </body>
+</body>
 </html>
