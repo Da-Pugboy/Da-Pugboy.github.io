@@ -2,13 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Mini Story!</title>
+    <title>Talk to rtsa</title>
     <style>
-        /* Add any necessary CSS styles here */
     </style>
 </head>
 <body>
     <h1>This page is made specifically for a friend of mine</h1>
+    <p>Any names besides "Mason" will be scrambled because i don't know if atrs (my friend) is okay with me sharing they're name online.</p>
     <ul>
         <li>Code: <input type="text" id="inputCode"></li>
     </ul>
@@ -19,11 +19,9 @@
             var message = document.getElementById("message");
             var inputCode = document.getElementById("inputCode").value;
             if (inputCode === "2010SM&2014AP") {
-                message.innerHTML = "Hi star this is mason. i made this little thing so that i can send messages to you, to bad you cant send them back. Check in every once in a while to see if i've sent any message's.";
-            } else {
-                message.innerHTML = ""; // Clear the message if code is incorrect
-            }
+                message.innerHTML = "Hi tsra this is mason. i made this little thing so that i can send messages to you, to bad you cant send them back. Check in every once in a while to see if i've sent any message's.";
         };
+            
         document.getElementById("code").addEventListener('click', sendMessage);
     </script>
 </body>
